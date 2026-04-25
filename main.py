@@ -9,6 +9,10 @@ A simple password storage program.
 
 A console based password manager that allows the user to create accounts with a username and 
 password and store, view, search, or add more accounts.
+
+
+I chose to use a dictionary instead of a list because each account is associated with a website name. This allows for fast 
+lookup using the site name as a key, which makes all of the functions more efficient than searching through a list of entries one by one.
 """
 
 ##########################################
