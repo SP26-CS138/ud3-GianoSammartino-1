@@ -101,7 +101,7 @@ def get_choice():
     print("3. Add account")
     print("4. Exit")
 
-    choice = input("Enter choice (1-4)")
+    choice = input("Enter choice (1-4): ")
     if choice in ["1", "2", "3", "4"]:
         return choice
     else:
@@ -128,7 +128,7 @@ def main():
         elif choice == "3":
             add_account(accounts)
         elif choice == "4":
-            save_accounts(accounts)
+            save_accounts(file_name, accounts)
             print("Data saved.")
             running = False
 
