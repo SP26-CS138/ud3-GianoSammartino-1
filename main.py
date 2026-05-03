@@ -31,7 +31,8 @@ def load_accounts(file_name):
     #Loads account data from a file into a dictionary
 
     accounts = {}
-    file_in = open(file_name, "r")
+    file_in = open(file_name, "a+") # Creates a file if it doesn't exist
+    file_in.seek(0)                 # Moves to start of file so it can be read
     for line in file_in:
         line = line.strip()
         if line != "":
